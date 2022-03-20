@@ -1,0 +1,9 @@
+.upload__image-wrapper__btns {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-item {
+  margin: 10px;
+}
