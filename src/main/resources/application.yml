@@ -1,0 +1,13 @@
+cloud:
+  aws:
+    s3:
+      bucket: Type your bucket name of S3
+      region: Type your region of S3
+      accessKey: Type your accessKey of IAM user
+      secretKey: Type your secretKey of IAM user
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
