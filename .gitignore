@@ -22,7 +22,6 @@ build/
 *.iml
 *.ipr
 out/
-.env
 
 ### NetBeans ###
 /nbproject/private/
