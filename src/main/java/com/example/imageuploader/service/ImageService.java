@@ -54,7 +54,7 @@ public class ImageService {
         final ObjectMetadata objectMetadata = new ObjectMetadata();
         objectMetadata.setContentLength(file.getSize());
         s3Client.putObject(new PutObjectRequest(bucket, fileName, file.getInputStream(), objectMetadata)
-                                   .withCannedAcl(CannedAccessControlList.PublicRead)); // 외부에 공개할 이미지이므로, 해당 파일에 public read 권한을 추가
+                                   .withCannedAcl(CannedAccessControlList.PublicRead));
         return s3Client.getUrl(bucket, fileName).toString();
     }
 
